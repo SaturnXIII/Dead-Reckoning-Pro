@@ -1,0 +1,31 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username ==> 'mapbox' is correct
+                username = 'mapbox'
+                // Use the secret token you stored in gradle.properties as the password
+                password = project.findProperty('MAPBOX_DOWNLOADS_TOKEN') ?: ""
+            }
+        }
+    }
+}

@@ -101,7 +101,7 @@ This correction is applied when GPS is unavailable, significantly improving accu
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/DeadReckoning.git
+   git clone https://github.com/SaturnXIII/Dead-Reckoning-Pro
    cd DeadReckoning
    ```
 
@@ -289,7 +289,7 @@ app/src/main/res/
 
 **Original Project**: [nisargnp/DeadReckoning](https://github.com/nisargnp/DeadReckoning)
 
-**Fork & Modifications**: Add your GitHub link here
+**Fork & Modifications**: https://github.com/SaturnXIII/Dead-Reckoning-Pro
 
 **Libraries Used**:
 - OSMDroid (OpenStreetMap)
